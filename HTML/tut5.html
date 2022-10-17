@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms, Labels, radio</title>
+</head>
+
+<body>
+    <h2>Html forms</h2>
+    <form action="backend.java">
+        <label for="name"> Name</label>
+        <!--This is for the action happening in backend-->
+        <div> <input type="text" name="myname" /></div>
+        <br />
+        <div>Role: <input type="text" name="myRole" /></div>
+        <br />
+        <div>Email: <input type="email" name="myEmail" /></div>
+        <br />
+        <!--Date of Birth Selector--> <!--Important for modern websites-->
+        <div>DOB: <input type="date" name="myDOB" /></div>
+        <br />
+        <div>Bonus: <input type="number" name="myBonus" /></div>
+        <br />
+        <div>
+            Are you Eligible: <input type="checkbox" name="myeligibility" />
+        </div>
+        <br>
+        <div>
+            Write about yourself:<br> <textarea name="mytext" cols="50" rows="10"></textarea>
+        </div>
+        <br />
+        <!--This is how to crete choose option-->
+    <label for="car"> Car</label>
+    <!--if a user clicks on the text within the <label> element, it toggles the control-->
+        <select name="myCar" id="car"> 
+            <!--This is how to crete choose option-->
+          <option value="Creta">Creta</option>
+          <option value="Swift">Swift</option>
+          <option value="Civic">Civic</option>
+          <option value="Cresta">Cresta</option>
+        </select>
+        <div>
+            <br>
+            My Gender: <input type="radio" name="myGender" /> Female
+             <!--Radio button is used to describing a set of related options. -->
+            <input type="radio" name="myGender" /> Other
+            <input type="radio" name="myGender" />
+            <br>
+            <div>Email: <input type="submit" name="Submit Now" /></div>
+        </div>
+        <br>
+        <div>Reset: <input type="reset" name="Reset Now" /></div>
+        </div>
+        <!--Div tag is use to division one from another-->
+        <!--Br is not recommended-->
+    </form>
+</body>
+
+</html>
