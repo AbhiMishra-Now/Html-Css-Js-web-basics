@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+
+    <!--This is element selector changes all parargraphs color even it is in div tag-->
+
+    <style>
+        /* element selector */
+        p{
+            border: 2px solid orange;
+        }
+        /* . is Class selector . is used to select class */
+        .firstPara{
+            background-color: yellow;
+            color: crimson;
+        }
+        /* # is used to select id */
+    #SecondPara{
+        background-color: coral;
+        color: rgb(20, 23, 220);
+    }
+    /* Grouping selector */
+    footer, span{
+        background-color: pink;
+    }
+</style>
+
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p class="firstPara">This is a simple paragraph to give demo of css selectors </p>
+    
+    <!-- id selector used if you change only one particular element -->
+    <div> 
+    <p id="SecondPara" class="bgGreen">This is a simple paragraph to give demo of css selectors </p>
+    <span>This is span</span>
+</div>
+<!--Class selector is used for multipile elements like row, para, box etc.-->
+<footer>This is footer</footer>
+    <h2>Types of Selectors</h2>
+    <ul>
+        <li> Css element selectors</li>
+        <li> Css id selector</li>
+        <li> Css class selector</li>
+        <li> The Css grouping selector</li>
+    </ul>
+</body>
+</html>
