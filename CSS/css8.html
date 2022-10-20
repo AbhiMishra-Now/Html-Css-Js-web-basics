@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+.container{
+ width: 900px;
+ /* border: 3px solid red; */
+ margin:33px auto /*means in center*/
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background: rgb(248, 130, 130);
+}
+.item{
+    border: 3px solid rgb(133, 6, 252);
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background: rgb(252, 223, 170);
+}
+#fruit{
+    float: left;
+    width: 48%;
+}
+#computer
+{
+    float: left;
+    width: 48%;
+}
+#stationary
+{
+    /* float: left; */
+    width: 98%;
+    clear: both; /*means no one can overlap*/
+}
+p,h3{
+    text-align: right;
+    text-align: left;
+    text-align: center;
+    text-align: justify;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Cars</h3>
+         <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique facere error expedita sit eius rem! Reiciendis nesciunt officia incidunt assumenda iure, itaque dignissimos laboriosam ipsum esse suscipit sint tenetur nobis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum distinctio, excepturi praesentium quis voluptatem corrupti laudantium aliquid molestiae cumque nesciunt.
+         </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="computer" class="item">
+            <h3>computer</h3>
+         <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique facere error expedita sit eius rem! Reiciendis nesciunt officia incidunt assumenda iure, itaque dignissimos laboriosam ipsum esse suscipit sint tenetur nobis.
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nesciunt voluptate, ad eveniet vero voluptatibus velit maiores veritatis iure harum.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+         <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique facere error expedita sit eius rem! Reiciendis nesciunt officia incidunt assumenda iure, itaque dignissimos laboriosam ipsum esse suscipit sint tenetur nobis.</p>
+        </div>
+    </div>
+
+</body>
+</html>
