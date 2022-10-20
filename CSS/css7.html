@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+      /* This * is universal selector */
+    *{
+        box-sizing: border-box; /*It can adjust width acordingly to padding */
+        margin:0;
+        padding: 0;
+        /* margin and padding set to default you can override accordingly you want */
+    }
+    body{
+        background-color: rgb(255, 226, 146);
+    }
+
+        .container{
+            background-color: rgb(185, 124, 255);
+            border: 3px solid rgb(255, 115, 115);
+            /* we can set margin/padding like this for top, bottom, left, right */
+
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 80px;
+            padding-left: 80px;
+            
+            FOR MARGIN
+            margin-top: 79px;
+            margin-bottom: 79px;
+            margin-left: 80px;
+            margin-left: 80px;
+
+             */
+ 
+            /* you can set for padding and margin like this = top right bottom left 
+             padding/margin: 23px 56px 6px 7px; */
+
+             /* You can set padding like this padding: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 633px;
+            box-sizing: border-box /*It can adjust width acordingly to padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti accusantium quidem rerum cupiditate tempora, soluta maxime reiciendis fuga asperiores.</p>
+    </div>    
+
+        <div class="container">
+            <h3>This is my heading</h3>
+            <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti accusantium quidem rerum cupiditate tempora, soluta maxime reiciendis fuga asperiores.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corrupti accusantium quidem rerum cupiditate tempora, soluta maxime reiciendis fuga asperiores.</p>
+</body>
+</html>
