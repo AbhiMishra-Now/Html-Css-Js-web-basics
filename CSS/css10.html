@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+        .navBar{
+            background-color: rgb(248, 152, 152);
+        }
+
+        /* when we float left it will overflow from parent that's why we have to use this */
+        .navBar ul{
+            overflow: auto;
+        }
+        .navBar li{
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navBar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+        }
+        
+        .navBar li a :hover{
+            background-color:  rgb(12, 252, 4);
+        }
+        .search{
+            float: right;
+            color:white;
+            padding: 12px 75px;
+        }
+        .navBar input{
+            border: 2px solid white;
+            border-radius: 4px;
+            padding: 3px 15px;
+            width: 129px ;
+        }
+    </style>
+</head>
+<body>
+    <!-- NavBar -->
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li><a href ="#"></a>Home</a></li>
+                <li><a href ="#"></a>Services</a></li>
+                <li><a href ="#"></a>Contact us</a></li>
+                <li><a href ="#"></a>About</a></li>
+                <div class="search"> 
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <!-- this is how you can create place holder  -->
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
