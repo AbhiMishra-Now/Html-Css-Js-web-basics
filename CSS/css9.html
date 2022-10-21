@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+    .container{
+        border: 2px solid rgb(245, 131, 131);
+        background-color: aqua;
+        padding: 34px;
+        margin: 34px auto;
+        width: 728px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    /* This visited means if you go to that link one time it will show you that button visited and in green color */
+    a:visited{
+      background-color: rgb(46, 247, 46);
+    }
+    
+    /* when we use : it means it is pseudo selector */
+    a:active{
+      background-color: rgb(5, 1, 53);
+    }
+    /* hover effects */
+    a:hover{
+        background-color: rgb(255, 208, 0);
+        /* background-color: lightpink; */
+    }
+    .btn{
+        background-color: royalblue;
+        border: none;
+        padding: 6px;
+        cursor: pointer;
+        font-size: 13px;
+        border-radius: 4px;
+    }
+    /* hover effects with boder white on hovering*/
+    .btn:hover{
+        color: tomato;
+        background-color: rgb(133, 0, 27);
+        border: 1px solid rgb(250, 141, 141)
+    }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is Heading</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos at quibusdam perferendis quo. Nobis saepe dignissimos magni ipsa suscipit nisi, ullam inventore officiis quidem.</p>
+    <a href="https://www.google.com" class="btn">Read more</a>
+    <button class="btn">Contact us</button>
+</body>
+</html>
