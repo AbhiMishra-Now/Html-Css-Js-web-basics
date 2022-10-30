@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        }
+
+        /* use the following CSS  to add styling to all the paragraphs inside the div :
+
+        div p{
+            color: rgb(0, 0, 128);
+            background-color:orange;
+            font-weight: bold;
+        }
+        
+    whenever we want to target a direct child element, we use the following syntax :
+
+element> element; 
+
+Example :  div>p
+
+you can un comment and see the changes:
+ h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        }
+        div>p{
+            background-color: lightblue;
+            color:white;
+        }
+
+
+div+p :
+There might be situations where you want to select the <p> tags that are immediately after the <div> elements. In such cases, we use the div+p selectors. Let's understand this with the help of example given below:
+
+          you can see that the CSS is applied only to the third and outermost paragraphs because they are next to the <div> element.
+     h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        } */
+
+        /* div>p{
+            background-color: lightblue;
+            color:white;
+        } */
+
+        /*
+        div+p{
+          color: white;
+          background-color:#D2302C;
+      }
+
+      /* if p is contained by any li which is contained by div */
+    /* div li p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+
+    /* if p is right inside div then this CSS will be applied */
+    /* div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+
+    /* if p is right after div i.e p is the next sibling of div*/
+    /* div + p{
+        color: white;
+        background-color: rgb(238, 137, 137);
+    } */
+
+    </style>
+</head>
+<body>
+    <h1> This is selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is a paragraph inside li and this is not a direct child of div. It will not get affected.</p>
+                </li>
+            </ul>
+            <p> This is the second paragraph and it will get affected because it is the direct child of div.</p>
+        </div>
+        <p> This is the third pargraph and it will get affected because it is also a direct child</p>
+    </div>
+    <p> This is the outer most paragraph and it will not get affected. </p>
+</body>
+</html>
+
